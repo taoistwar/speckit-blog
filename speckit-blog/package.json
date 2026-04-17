@@ -2,6 +2,10 @@
   "name": "speckit-blog",
   "version": "1.0.0",
   "description": "Personal blog powered by Eleventy",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/taoistwar/speckit-blog"
+  },
   "scripts": {
     "dev": "eleventy --serve",
     "build": "npx tailwindcss -i src/css/main.css -o src/css/styles.css && eleventy",
