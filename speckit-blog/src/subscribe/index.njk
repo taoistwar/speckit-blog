@@ -1,0 +1,37 @@
+---
+layout: layouts/base.njk
+title: Subscribe
+---
+
+<section class="max-w-2xl mx-auto">
+  <h1 class="text-3xl font-bold text-gray-900 mb-4">Subscribe to Updates</h1>
+  <p class="text-gray-700 mb-6">
+    Get notified when I publish new posts. Enter your email address below and I'll send you a quick note when there's something new to read.
+  </p>
+
+  <div class="bg-gray-50 p-6 rounded-lg">
+    <form name="subscribe" method="POST" data-netlify="true" netlify-honeypot="bot-field" class="space-y-4">
+      <input type="hidden" name="form-name" value="subscribe">
+      <p class="hidden">
+        <label>Don't fill this out: <input name="bot-field"></label>
+      </p>
+      <div>
+        <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email address</label>
+        <input type="email" id="email" name="email" required placeholder="you@example.com" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent">
+      </div>
+      <button type="submit" class="w-full px-4 py-2 bg-primary-600 text-white font-medium rounded-lg hover:bg-primary-700 transition">
+        Subscribe
+      </button>
+    </form>
+    <p class="mt-4 text-sm text-gray-500">
+      No spam, unsubscribe anytime. Your email is stored securely and never shared.
+    </p>
+  </div>
+
+  <div class="mt-8">
+    <h2 class="text-xl font-semibold text-gray-900 mb-2">Alternative ways to follow</h2>
+    <ul class="space-y-2 text-gray-700">
+      <li>• <a href="/feed.xml" class="text-primary-600 hover:text-primary-700">RSS Feed</a> - Subscribe in any RSS reader</li>
+    </ul>
+  </div>
+</section>

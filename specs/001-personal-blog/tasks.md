@@ -25,14 +25,14 @@
 
 **Purpose**: Project initialization and basic structure
 
-- [ ] T001 Create project directory structure `speckit-blog/` with `src/`, `src/_includes/`, `src/_includes/layouts/`, `src/_includes/partials/`, `src/css/`, `src/posts/`
-- [ ] T002 Create `speckit-blog/package.json` with Eleventy 2.x, Tailwind CSS 3.x, @11ty/eleventy-plugin-rss, markdown-it-anchor, markdown-it-attrs dependencies
-- [ ] T003 [P] Create `speckit-blog/.eleventy.js` with basic Eleventy configuration (input: src, output: _site, markdown plugins)
-- [ ] T004 [P] Create `speckit-blog/tailwind.config.js` with content paths for Eleventy templates
-- [ ] T005 [P] Create `speckit-blog/src/css/main.css` with Tailwind directives (@tailwind base, components, utilities)
-- [ ] T006 Create `speckit-blog/src/_data/site.json` with site title, description, author, URL configuration
-- [ ] T007 Create `speckit-blog/src/posts/posts.json` with posts collection defaults (layout, tags: post)
-- [ ] T008 Add npm scripts to package.json: `dev` (eleventy --serve + tailwind), `build` (tailwind && eleventy), `clean` (rm -rf _site)
+- [x] T001 Create project directory structure `speckit-blog/` with `src/`, `src/_includes/`, `src/_includes/layouts/`, `src/_includes/partials/`, `src/css/`, `src/posts/`
+- [x] T002 Create `speckit-blog/package.json` with Eleventy 2.x, Tailwind CSS 3.x, @11ty/eleventy-plugin-rss, markdown-it-anchor, markdown-it-attrs dependencies
+- [x] T003 [P] Create `speckit-blog/.eleventy.js` with basic Eleventy configuration (input: src, output: _site, markdown plugins)
+- [x] T004 [P] Create `speckit-blog/tailwind.config.js` with content paths for Eleventy templates
+- [x] T005 [P] Create `speckit-blog/src/css/main.css` with Tailwind directives (@tailwind base, components, utilities)
+- [x] T006 Create `speckit-blog/src/_data/site.json` with site title, description, author, URL configuration
+- [x] T007 Create `speckit-blog/src/posts/posts.json` with posts collection defaults (layout, tags: post)
+- [x] T008 Add npm scripts to package.json: `dev` (eleventy --serve + tailwind), `build` (tailwind && eleventy), `clean` (rm -rf _site)
 
 ---
 
@@ -42,14 +42,14 @@
 
 **CRITICAL**: No user story work can begin until this phase is complete
 
-- [ ] T009 Create `speckit-blog/src/_includes/layouts/base.njk` with HTML5 boilerplate, meta tags (title, description, OG), CSS link, semantic structure (header, main, footer)
-- [ ] T010 Create `speckit-blog/src/_includes/partials/header.njk` with site logo/title link and main navigation
-- [ ] T011 Create `speckit-blog/src/_includes/partials/footer.njk` with copyright, RSS link, subscribe form partial
-- [ ] T012 Create `speckit-blog/src/index.njk` as home page listing recent posts with pagination
-- [ ] T013 Create sample post `speckit-blog/src/posts/2026-04-17-welcome.md` with title, date, tags, sample content for testing
-- [ ] T014 Verify build: `npm run build` produces `_site/index.html` and `_site/posts/welcome/`
+- [x] T009 Create `speckit-blog/src/_includes/layouts/base.njk` with HTML5 boilerplate, meta tags (title, description, OG), CSS link, semantic structure (header, main, footer)
+- [x] T010 Create `speckit-blog/src/_includes/partials/header.njk` with site logo/title link and main navigation
+- [x] T011 Create `speckit-blog/src/_includes/partials/footer.njk` with copyright, RSS link, subscribe form partial
+- [x] T012 Create `speckit-blog/src/index.njk` as home page listing recent posts with pagination
+- [x] T013 Create sample post `speckit-blog/src/posts/2026-04-17-welcome.md` with title, date, tags, sample content for testing
+- [x] T014 Verify build: `npm run build` produces `_site/index.html` and `_site/posts/welcome/`
 
-**Checkpoint**: Foundation ready - site builds, home page renders, basic post displays
+**Checkpoint**: Foundation ready - site builds, home page renders, basic post displays ✅
 
 ---
 
@@ -61,13 +61,13 @@
 
 ### Implementation for User Story 1
 
-- [ ] T015 [P] [US1] Create `speckit-blog/src/_includes/layouts/post.njk` extending base.njk with post-specific layout (article, header with title/date, content, tags, back link)
-- [ ] T016 [P] [US1] Create `speckit-blog/src/posts/*.md` permalink template with proper URL structure `/posts/{slug}/`
-- [ ] T017 [US1] Configure markdown-it with syntax highlighting plugin for code blocks in `.eleventy.js`
-- [ ] T018 [US1] Add post metadata display (date formatted, author if set) in post.njk layout
-- [ ] T019 [US1] Create `speckit-blog/netlify.toml` with build settings (build command: npm run build, publish directory: _site)
+- [x] T015 [P] [US1] Create `speckit-blog/src/_includes/layouts/post.njk` extending base.njk with post-specific layout (article, header with title/date, content, tags, back link)
+- [x] T016 [P] [US1] Create `speckit-blog/src/posts/*.md` permalink template with proper URL structure `/posts/{slug}/`
+- [x] T017 [US1] Configure markdown-it with syntax highlighting plugin for code blocks in `.eleventy.js`
+- [x] T018 [US1] Add post metadata display (date formatted, author if set) in post.njk layout
+- [x] T019 [US1] Create `speckit-blog/netlify.toml` with build settings (build command: npm run build, publish directory: _site)
 
-**Checkpoint**: User Story 1 complete - posts render with markdown, syntax highlighting works
+**Checkpoint**: User Story 1 complete - posts render with markdown, syntax highlighting works ✅
 
 ---
 
@@ -79,14 +79,14 @@
 
 ### Implementation for User Story 2
 
-- [ ] T020 [P] [US2] Create `speckit-blog/src/tags.njk` with Eleventy pagination over collections to generate `/tags/{tag}/` pages
-- [ ] T021 [P] [US2] Create `speckit-blog/src/_includes/layouts/tag.njk` extending base.njk for tag archive pages
-- [ ] T022 [US2] Add tag links to post layout in post.njk (each tag as clickable link to `/tags/{tag}/`)
-- [ ] T023 [US2] Create `speckit-blog/src/tags/index.njk` listing all tags used on the site with post counts
-- [ ] T024 [US2] Configure Eleventy to filter out system tags (all, post) from tag collections in `.eleventy.js`
-- [ ] T025 [US2] Test tag page generation with sample posts having different tags
+- [x] T020 [P] [US2] Create `speckit-blog/src/tags.njk` with Eleventy pagination over collections to generate `/tags/{tag}/` pages
+- [x] T021 [P] [US2] Create `speckit-blog/src/_includes/layouts/tag.njk` extending base.njk for tag archive pages
+- [x] T022 [US2] Add tag links to post layout in post.njk (each tag as clickable link to `/tags/{tag}/`)
+- [x] T023 [US2] Create `speckit-blog/src/tags/index.njk` listing all tags used on the site with post counts
+- [x] T024 [US2] Configure Eleventy to filter out system tags (all, post) from tag collections in `.eleventy.js`
+- [x] T025 [US2] Test tag page generation with sample posts having different tags
 
-**Checkpoint**: User Story 2 complete - tags display on posts, tag pages list all matching posts
+**Checkpoint**: User Story 2 complete - tags display on posts, tag pages list all matching posts ✅
 
 ---
 
@@ -98,14 +98,14 @@
 
 ### Implementation for User Story 3
 
-- [ ] T026 [P] [US3] Create `speckit-blog/src/_includes/partials/subscribe-form.njk` with Netlify form (method: POST, data-netlify: true, email input, hidden form-name field)
-- [ ] T027 [P] [US3] Add subscribe-form partial to footer.njk
-- [ ] T028 [US3] Create `speckit-blog/src/subscribe/index.njk` dedicated subscription page with form and explanation text
-- [ ] T029 [US3] Add honeypot field to form for spam protection (hidden text input named _gotcha)
-- [ ] T030 [US3] Configure Netlify form notifications in netlify.toml (optional, can also be done in dashboard)
-- [ ] T031 [US3] Create `speckit-blog/src/subscribers/index.njk` placeholder page explaining subscriber management (links to Netlify dashboard)
+- [x] T026 [P] [US3] Create `speckit-blog/src/_includes/partials/subscribe-form.njk` with Netlify form (method: POST, data-netlify: true, email input, hidden form-name field)
+- [x] T027 [P] [US3] Add subscribe-form partial to footer.njk
+- [x] T028 [US3] Create `speckit-blog/src/subscribe/index.njk` dedicated subscription page with form and explanation text
+- [x] T029 [US3] Add honeypot field to form for spam protection (hidden text input named _gotcha)
+- [x] T030 [US3] Configure Netlify form notifications in netlify.toml (optional, can also be done in dashboard)
+- [x] T031 [US3] Create `speckit-blog/src/subscribers/index.njk` placeholder page explaining subscriber management (links to Netlify dashboard)
 
-**Checkpoint**: User Story 3 complete - form submits to Netlify, subscribers visible in dashboard
+**Checkpoint**: User Story 3 complete - form submits to Netlify, subscribers visible in dashboard ✅
 
 ---
 
@@ -113,15 +113,15 @@
 
 **Purpose**: Improvements that affect multiple user stories
 
-- [ ] T032 [P] Add RSS/Atom feed generation using @11ty/eleventy-plugin-rss (create `src/feed.njk` with feed template)
-- [ ] T033 [P] Generate `src/sitemap.njk` for XML sitemap of all pages
-- [ ] T034 [P] Add `robots.njk` for robots.txt allowing all crawlers
-- [ ] T035 Create `speckit-blog/src/404.njk` custom 404 page with friendly message and recent posts
-- [ ] T036 Add Open Graph image meta tags to base.njk for social sharing
-- [ ] T037 Configure Tailwind for custom colors/fonts in tailwind.config.js
-- [ ] T038 Add favicon link to base.njk (use SVG placeholder)
-- [ ] T039 Performance audit: verify no render-blocking JS, CSS inlined or async, images lazy-loaded
-- [ ] T040 Create `speckit-blog/README.md` with setup instructions, commands, deployment guide
+- [x] T032 [P] Add RSS/Atom feed generation using @11ty/eleventy-plugin-rss (create `src/feed.njk` with feed template)
+- [x] T033 [P] Generate `src/sitemap.njk` for XML sitemap of all pages
+- [x] T034 [P] Add `robots.njk` for robots.txt allowing all crawlers
+- [x] T035 Create `speckit-blog/src/404.njk` custom 404 page with friendly message and recent posts
+- [x] T036 Add Open Graph image meta tags to base.njk for social sharing
+- [x] T037 Configure Tailwind for custom colors/fonts in tailwind.config.js
+- [x] T038 Add favicon link to base.njk (use SVG placeholder)
+- [x] T039 Performance audit: verify no render-blocking JS, CSS inlined or async, images lazy-loaded
+- [x] T040 Create `speckit-blog/README.md` with setup instructions, commands, deployment guide
 
 ---
 
