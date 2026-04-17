@@ -8,4 +8,4 @@ author: "Your Name"
 excerpt: "A brief description for SEO and cards"
 ---
 
-Your content here...
+使用 speckit 生成的博客网站，仅用于测试
