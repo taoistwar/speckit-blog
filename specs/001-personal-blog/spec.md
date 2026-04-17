@@ -96,8 +96,9 @@ As a reader, I want to subscribe with my email address so I receive notification
 
 ## Assumptions
 
-- **Static Site Generator**: Hugo is selected for its native tag support, fast build times, and single-binary deployment
-- **Newsletter Service**: Buttondown for simplicity (minimal API, affordable, developer-friendly); can swap later
-- **Hosting**: GitHub Pages or Netlify for zero-cost static hosting with CI/CD
-- **Email Handling**: Subscription form POSTs to newsletter service API; confirmation handled by external service
-- **Out of Scope for v1**: Comments, search, analytics, pagination beyond basic listing, rich media embeds
+- **Static Site Generator**: Eleventy (11ty) for its minimal config, JavaScript flexibility, and excellent Markdown support
+- **CSS Framework**: Tailwind CSS for utility-first styling with minimal overhead
+- **Hosting**: Netlify for static hosting with built-in form handling for email subscriptions
+- **Subscriber Storage**: JSON file (via Netlify form submissions or manual management); Mailchimp integration optional for v2
+- **Email Handling**: Netlify form POST captures subscriber emails; exported as JSON for external service integration
+- **Out of Scope for v1**: Comments, full-text search, analytics, pagination beyond basic listing, rich media embeds
