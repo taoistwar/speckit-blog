@@ -103,6 +103,8 @@ speckit-blog/
 
 **Outputs**: `data-model.md`, `contracts/feed.md`, `quickstart.md`
 
-## Phase 2: Tasks (TODO)
+## Phase 2: Tasks ✅
 
-- [ ] Run `/speckit.tasks` to generate task list from this plan
+- [x] Run `/speckit.tasks` to generate task list from this plan
+
+**Output**: `tasks.md`
